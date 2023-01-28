@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Task</title>
+    <!-- Mini task form git hub  -->
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: rgb(190, 126, 251);
+        }
+
+        .body{
+            background-color: rgb(222, 160, 203);
+        }
+        input{
+            background-color: blanchedalmond
+        }
+        .task-5:hover{
+            cursor:auto;
+            color: red;
+        }
+        .submit{
+            display: flex;
+    align-content: center;
+    margin-left: 200px;
+        }
+           
+           
+       
+    </style>
+</head>
+
+<body class="body">
+    <a href="https://github.com/rvsp/HTML-CSS/blob/master/Mini-tasks/001-HTML.md" target="_blank"> Mini-tasks Details
+    </a>
+    <h4>Task -1 and Task 2 (fixing bugs)</h4>
+    <p> Solutions are in task-details page <a href="task-details.doc">Click here </a> to view</p>
+    <!--Task -3 ad task -9-->
+    <h3>Task-3, Task- 6 and task-9</h3>
+    <div style="border: 4px double black;">
+        <h2>!! CONTACT US!!</h2>
+        <form onsubmit="alert('Thanks for contacting us, We will contact you ASAP! ')" value="submit" >
+            <div>
+                <label for="name " >Name : </label>
+                <input type="text" id="name" onfocus="this.value=''" value= "Enter Your Name"required  />
+            </div>
+                <br/>
+            <div>
+                <label for="phone">Phone-No: </label>
+                <input type="text" id="Phone" onfocus="this.value=''" value= "Enter Your Mobile number"required />
+            </div>
+            <br/>
+            <div>
+                <label for="email">Email : </label>
+                <input type="text" id="email"  onfocus="this.value=''" value="Enter your Email address"required />
+            </div>
+            <br/>
+            <!-- Task-6 -->
+            <!-- In the form, add two radio buttons with grouping them for employee type(Salaried and own business)   -->
+            <input type="radio" name="emp" id=" employee1" value="salaried" checked>
+            <label for="employee1">
+                Salaried
+            </label>
+            <input type="radio" name="emp" for="employee2" value="Own busines">
+            <label for="employee2">
+                Own busines </label>
+                <br/>
+                <br/>
+                <div class="submit">
+            <input type="submit" value="Submit !!" style="width: 10%;">
+        </div>
+        </form>
+    </div>
+    <h3>Task -4</h3>
+    <div>
+        <ul>
+            <li> Programming Language</li>
+            <ul>
+                <li>JavaScript</li>
+                <ol type="a">
+                    <li> Angular</li>
+                    <li> React</li>
+                    <li>Vue.js</li>
+                </ol>
+            </ul>
+            <ul>
+                <li>Python</li>
+                <ol type="a">
+                    <li>Django Framework</li>
+                    <li> Framework</li>
+                </ol>
+            </ul>
+
+            <ul>
+                <li>Java</li>
+                <ol type="a">
+                    <li>Spring</li>
+                    <li>Hibernate</li>
+                    <li> Maven</li>
+                </ol>
+            </ul>
+        </ul>
+        <ul>
+            <li>Database</li>
+            <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Cansandra</li>
+            </ul>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <h3>Task-5</h3>
+        <a href="https://google.com" target="_blank" class="task-5">Click me to Open Google in New Tab</a>
+    </div>
+    <h3>Task-8</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <td rowspan="2">State of health</td>
+                <td colspan="2">Fasting value</td>
+                <td>After eating</td>
+            </tr>
+            <tr>
+
+                <td>min</td>
+                <td>max</td>
+                <td>2hours after eating</td>
+
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+
+            </tr>
+            <tr>
+
+                <td>health</td>
+                <td>70</td>
+                <td>100</td>
+                <td>less than 140</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>pre diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 t0 200</td>
+            </tr>
+            <tr>
+
+                <td>diabetes</td>
+                <td>More than 126</td>
+                <td>NA</td>
+                <td>More than 200</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div>
+        <h3 >Task-10</h3>
+           <li> <mark>HTML & CSS is awesome</mark></li>
+    </div>
+</body>
+
+</html>

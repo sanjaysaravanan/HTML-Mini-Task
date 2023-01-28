@@ -1,0 +1,87 @@
+HTML Task to know usage of basic tags.
+<!-- 
+Task 1.
+<!-- Fix the bugs in below snippet
+    <html lang="en">
+    <head>
+        <title>Document
+            <body>
+                guvi
+        </title>
+    </head>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </body>
+    </html> -->
+
+Solution for task -1:
+---------------------
+<html lang="en">
+    <head>
+        <title>Document
+
+            <!--Bug found!! No Body tag should be in head.-->
+            <!-- <body> -->
+                guvi
+        </title>
+    </head>
+    <!--Bug found!! No Body tag after head.-->
+    <body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <!--Bug found!! Missing (slash /) in closing div tag.-->
+        <!-- <div> -->
+            </div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </body>
+    </html>
+---------------------------------------------------------------------------------------------------
+Task -2;
+
+Try the below one
+<!-- <html lang="en">
+    <head>
+        <title>Document
+            <body>
+                guvi
+    </head>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </body>
+    </html> -->
+
+ Solution to task 2;
+ -------------------
+
+ <html lang="en">
+    <head>
+        <title>Document
+             <!--Bug found!! No Body tag should be in head section.-->
+            <!-- <body> -->
+                guvi
+                <!--Bug found!! No closing tag for Titile in head section.-->
+        </title>     
+    </head>
+    <!--Bug found!! No Body tag after head.-->
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    <!--Bug found!! Missing (slash /) in closing div tag.-->
+        <!-- <div> -->
+        </div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </body>
+    </html> 
+----------------------------------------------------------------------------------------------------------       
+BY-Umapathy -->
