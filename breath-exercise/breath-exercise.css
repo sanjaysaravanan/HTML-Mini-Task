@@ -1,0 +1,79 @@
+body {
+  background-color: #2196f3;
+  height: 100vh;
+  color: #eef7fe;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+.board {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: #4dabf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-main {
+  background-color: #eef7fe;
+  /* animation: zoom 15s ease infinite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  animation: zoom 15s ease infinite;
+}
+
+@keyframes zoom {
+  0% {
+    width: 500px;
+    height: 500px;
+  }
+
+  50% {
+    width: 25px;
+    height: 25px;
+  }
+
+  100% {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.board-background {
+  position: absolute;
+}
+
+/* .txt {
+  transition: all 550ms ease;
+} */
+
+.txt::after {
+  animation: textchange 15s ease infinite;
+  content: 'Breath In';
+}
+
+@keyframes textchange {
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    content: 'Breath Out';
+  }
+}
+
+
+/* @keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+} */

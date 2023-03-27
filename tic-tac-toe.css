@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #14bdac !important;
+  height: 100vh;
+  margin: 0px;
+}
+
+.board {
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.pad {
+  height: 200px;
+  width: 200px;
+}
+
+
+@keyframes loadboardX {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1) scaleZ(1);
+  }
+}
+
+@keyframes loadboardY {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1) scaleZ(1);
+  }
+}
+
+
+.axis {
+  height: 600px;
+  width: 10px;
+  background-color: #0da192;
+  position: absolute;
+  transition: transform 500s ease-in-out;
+}
+
+.x-axis {
+  height: 10px !important;
+  width: 600px !important;
+  animation: loadboardX 500ms ease-in-out;
+}
+
+.x-axis-one {
+  top: 195px;
+  left: 0px;
+}
+
+.x-axis-two {
+  top: 395px;
+}
+
+.y-axis {
+  animation: loadboardY 500ms ease-in-out;
+}
+
+.y-axis-one {
+  left: 195px;
+}
+
+.y-axis-two {
+  left: 395px;
+}
