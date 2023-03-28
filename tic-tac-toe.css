@@ -1,10 +1,17 @@
+h1 {
+  text-transform: uppercase;
+  font-family: monospace;
+  margin-top: 75px;
+  font-size: 52px;
+  color: #545454;
+  animation: result 500ms ease forwards;
+}
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #14bdac !important;
   height: 100vh;
   margin: 0px;
+  text-align: center;
 }
 
 .board {
@@ -16,6 +23,9 @@ body {
 }
 
 .pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
   width: 200px;
 }
@@ -40,7 +50,6 @@ body {
     transform: scaleY(1) scaleZ(1);
   }
 }
-
 
 .axis {
   height: 600px;
@@ -75,4 +84,109 @@ body {
 
 .y-axis-two {
   left: 395px;
+}
+
+.winner-x-axis {
+  height: 15px !important;
+  width: 600px;
+}
+
+.winner-y-axis {
+  height: 600px;
+  width: 15px;
+}
+
+.winner-cross-two {
+  height: 15px;
+  width: 800px;
+}
+
+.winner-cross-one {
+  height: 800px;
+  width: 15px;
+}
+
+.winner-axis {
+  position: absolute;
+}
+
+.winner-axis-x {
+  background-color: #545454;
+}
+
+.winner-axis-o {
+  background-color: #f2ebd3;
+}
+
+.x-segment-three {
+  top: 491px;
+}
+
+.x-segment-two {
+  top: 292px;
+}
+
+.x-segment-one {
+  top: 91px
+}
+
+.y-segment-three {
+  left: 493px;
+}
+
+.y-segment-two {
+  left: 293px;
+}
+
+.y-segment-one {
+  left: 93px;
+}
+
+.cross-one {
+  left: 295px;
+  rotate: -45deg;
+  top: -99px;
+}
+
+.cross-two {
+  top: 300px;
+  rotate: -45deg;
+  right: -91px;
+  animation: loadboardX 500ms ease-in-out !important;
+}
+
+.circle_animation {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.html .circle_animation {
+  -webkit-animation: html 1s ease-out forwards;
+  animation: html 1s ease-out forwards;
+}
+
+.result {
+  animation: result 500ms ease forwards;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes result {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1.7);
+  }
+}
+
+@-webkit-keyframes html {
+  to {
+    stroke-dashoffset: 440; /* 50% would be 220 (half the initial value specified above) */
+  }
+}
+
+@keyframes html {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
