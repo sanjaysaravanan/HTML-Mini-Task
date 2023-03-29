@@ -190,3 +190,16 @@ body {
     stroke-dashoffset: 0;
   }
 }
+
+button {
+  background: none;
+  border: 10px solid #545454;
+  color: #545454;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: monospace;
+  border-radius: 50px;
+  padding: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
