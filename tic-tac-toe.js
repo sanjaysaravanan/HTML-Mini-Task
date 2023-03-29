@@ -81,7 +81,7 @@ const checkWin = () => {
     winnerSegment = 'ver-two';
   }
   // column three check
-  else if ( p3 !== '' && (p3 === p6 && p2 === p9 ) ) {
+  else if ( p3 !== '' && (p3 === p6 && p3 === p9 ) ) {
     if (p3 === 'x')
       winner = 'x';
     else
